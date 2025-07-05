@@ -1,6 +1,6 @@
 <?php
 /**
- * ROI Labs Theme - Professional Header with Navigation
+ * ROI Labs Theme - AI-Focused Professional Header
  */
 
 if (!defined('ABSPATH')) {
@@ -12,8 +12,9 @@ if (!defined('ABSPATH')) {
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROI Labs - Transformando Ideias em Resultados</title>
-    <meta name="description" content="Desenvolvemos soluções tecnológicas inovadoras que geram ROI real para o seu negócio. Websites, Apps, IA e Consultoria Tech.">
+    <title>ROI Labs - Especialistas em Inteligência Artificial e Automação</title>
+    <meta name="description" content="Transformamos seu negócio com Inteligência Artificial. Chatbots, automação de processos, análise de dados e soluções de IA personalizadas que geram ROI real.">
+    <meta name="keywords" content="inteligência artificial, IA, chatbots, automação, machine learning, AI consulting, análise de dados, ROI">
     
     <style>
         /* Reset e Base */
@@ -65,7 +66,7 @@ if (!defined('ABSPATH')) {
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #007cba;
+            color: #6366f1;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -73,7 +74,7 @@ if (!defined('ABSPATH')) {
         }
         
         .logo:hover {
-            color: #005a8a;
+            color: #4f46e5;
             transform: scale(1.05);
             transition: all 0.3s ease;
         }
@@ -96,8 +97,8 @@ if (!defined('ABSPATH')) {
         }
         
         .nav-menu a:hover {
-            color: #007cba;
-            background: rgba(0, 124, 186, 0.1);
+            color: #6366f1;
+            background: rgba(99, 102, 241, 0.1);
         }
         
         .nav-menu a::after {
@@ -107,7 +108,7 @@ if (!defined('ABSPATH')) {
             left: 50%;
             width: 0;
             height: 2px;
-            background: #007cba;
+            background: #6366f1;
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
@@ -167,9 +168,9 @@ if (!defined('ABSPATH')) {
             top: 0;
         }
         
-        /* Hero Section */
+        /* Hero Section - AI Focused */
         .hero {
-            background: linear-gradient(135deg, #007cba 0%, #005a8a 100%);
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
             color: white;
             padding: 8rem 0 4rem;
             text-align: center;
@@ -184,7 +185,7 @@ if (!defined('ABSPATH')) {
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40v40zm40 0v-40h-40l40 40z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3Ccircle cx='53' cy='7' r='7'/%3E%3Ccircle cx='53' cy='53' r='7'/%3E%3Ccircle cx='7' cy='53' r='7'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
         }
         
         .hero-content {
@@ -193,17 +194,17 @@ if (!defined('ABSPATH')) {
         }
         
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.2rem;
             margin-bottom: 1.5rem;
             font-weight: 700;
             animation: fadeInUp 1s ease-out;
         }
         
         .hero p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 2rem;
+            font-size: 1.4rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
         
@@ -213,8 +214,8 @@ if (!defined('ABSPATH')) {
         
         .btn {
             display: inline-block;
-            padding: 0.75rem 2rem;
-            margin: 0 0.5rem 1rem;
+            padding: 0.9rem 2.2rem;
+            margin: 0 0.7rem 1rem;
             font-weight: 600;
             text-decoration: none;
             border-radius: 8px;
@@ -226,7 +227,7 @@ if (!defined('ABSPATH')) {
         
         .btn-primary {
             background: white;
-            color: #007cba;
+            color: #6366f1;
             box-shadow: 0 4px 15px rgba(255,255,255,0.3);
         }
         
@@ -243,20 +244,21 @@ if (!defined('ABSPATH')) {
         
         .btn-outline:hover {
             background: white;
-            color: #007cba;
+            color: #6366f1;
             transform: translateY(-3px);
         }
         
-        /* Sections */
-        .section {
+        /* AI Capabilities Section */
+        .ai-capabilities {
             padding: 5rem 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
         }
         
         .section-title {
             text-align: center;
             font-size: 2.8rem;
             margin-bottom: 4rem;
-            color: #333;
+            color: #1e293b;
             font-weight: 700;
             position: relative;
         }
@@ -268,55 +270,63 @@ if (!defined('ABSPATH')) {
             left: 50%;
             width: 60px;
             height: 4px;
-            background: #007cba;
+            background: #6366f1;
             transform: translateX(-50%);
             border-radius: 2px;
         }
         
-        .services-grid {
+        .capabilities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
             margin: 3rem 0;
         }
         
-        .service-item {
+        .capability-item {
             text-align: center;
             padding: 3rem 2rem;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
-            border: 1px solid rgba(0,124,186,0.1);
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            position: relative;
+            overflow: hidden;
         }
         
-        .service-item:hover {
+        .capability-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+        }
+        
+        .capability-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            border-color: #007cba;
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+            border-color: #6366f1;
         }
         
-        .service-icon {
+        .capability-icon {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
         }
         
-        .service-item h3 {
+        .capability-item h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #333;
+            color: #1e293b;
             font-weight: 600;
         }
         
-        .service-item p {
-            color: #666;
+        .capability-item p {
+            color: #64748b;
             line-height: 1.7;
             font-size: 1rem;
-        }
-        
-        .bg-secondary {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
         
         /* Contact */
@@ -343,19 +353,19 @@ if (!defined('ABSPATH')) {
         .contact-item h4 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #333;
+            color: #1e293b;
             font-weight: 600;
         }
         
         .contact-item a {
-            color: #007cba;
+            color: #6366f1;
             text-decoration: none;
             font-weight: 500;
             font-size: 1.1rem;
         }
         
         .contact-item a:hover {
-            color: #005a8a;
+            color: #4f46e5;
             text-decoration: underline;
         }
         
@@ -412,14 +422,14 @@ if (!defined('ABSPATH')) {
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.4rem;
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             
-            .section {
+            .ai-capabilities {
                 padding: 3rem 0;
             }
             
@@ -427,12 +437,12 @@ if (!defined('ABSPATH')) {
                 font-size: 2.2rem;
             }
             
-            .services-grid {
+            .capabilities-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             
-            .service-item {
+            .capability-item {
                 padding: 2rem 1.5rem;
             }
             
@@ -456,14 +466,14 @@ if (!defined('ABSPATH')) {
         <nav class="main-navigation">
             <div class="site-branding">
                 <a href="#hero" class="logo">
-                    🚀 ROI Labs
+                    🤖 ROI Labs
                 </a>
             </div>
             
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#hero">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#ia-solutions">Soluções IA</a></li>
+                <li><a href="#casos-uso">Casos de Uso</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
             
@@ -476,84 +486,89 @@ if (!defined('ABSPATH')) {
 
 <div id="page" class="site">
     
-    <!-- Hero Section -->
+    <!-- Hero Section - AI Focused -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Transformando Ideias em Resultados</h1>
-                <p>Desenvolvemos soluções tecnológicas inovadoras que geram ROI real para o seu negócio. Da concepção à execução, entregamos projetos que fazem a diferença.</p>
+                <h1>Inteligência Artificial que Transforma Negócios</h1>
+                <p>Especializamos em implementar soluções de IA que automatizam processos, analisam dados inteligentemente e geram ROI mensurável. Do chatbot ao machine learning avançado.</p>
                 <div class="hero-actions">
-                    <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
-                    <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                    <a href="#ia-solutions" class="btn btn-primary">Soluções de IA</a>
+                    <a href="#contato" class="btn btn-outline">Fale com Especialista</a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Services Section -->
-    <section class="section" id="servicos">
+    <!-- AI Capabilities Section -->
+    <section class="ai-capabilities" id="ia-solutions">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
+            <h2 class="section-title">Nossas Especialidades em IA</h2>
             
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">💻</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criamos websites e aplicações web modernas, responsivas e otimizadas para conversão e performance máxima.</p>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <div class="capability-icon">💬</div>
+                    <h3>Chatbots Inteligentes</h3>
+                    <p>Assistentes virtuais com processamento de linguagem natural que atendem 24/7, qualificam leads e reduzem custos operacionais em até 70%.</p>
                 </div>
                 
-                <div class="service-item">
-                    <div class="service-icon">📱</div>
-                    <h3>Apps Mobile</h3>
-                    <p>Desenvolvemos aplicativos nativos e híbridos para iOS e Android com foco na experiência do usuário.</p>
+                <div class="capability-item">
+                    <div class="capability-icon">⚙️</div>
+                    <h3>Automação de Processos</h3>
+                    <p>RPA (Robotic Process Automation) e workflows inteligentes que eliminam tarefas repetitivas e aumentam produtividade em 300%.</p>
                 </div>
                 
-                <div class="service-item">
-                    <div class="service-icon">🤖</div>
-                    <h3>Inteligência Artificial</h3>
-                    <p>Implementamos soluções de IA e automação para otimizar processos e aumentar a eficiência operacional.</p>
+                <div class="capability-item">
+                    <div class="capability-icon">📊</div>
+                    <h3>Análise Preditiva</h3>
+                    <p>Machine Learning para prever tendências, comportamentos e demandas, permitindo tomada de decisões estratégicas baseadas em dados.</p>
                 </div>
                 
-                <div class="service-item">
-                    <div class="service-icon">📊</div>
-                    <h3>Analytics & BI</h3>
-                    <p>Transformamos dados em insights acionáveis através de dashboards inteligentes e relatórios personalizados.</p>
+                <div class="capability-item">
+                    <div class="capability-icon">🎯</div>
+                    <h3>Personalização IA</h3>
+                    <p>Sistemas de recomendação e personalização que aumentam conversão, engagement e lifetime value dos clientes.</p>
                 </div>
                 
-                <div class="service-item">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Migramos e otimizamos sua infraestrutura para a nuvem, garantindo escalabilidade e segurança.</p>
+                <div class="capability-item">
+                    <div class="capability-icon">🔍</div>
+                    <h3>Computer Vision</h3>
+                    <p>Reconhecimento de imagens, OCR avançado e análise visual automatizada para controle de qualidade e otimização de processos.</p>
                 </div>
                 
-                <div class="service-item">
-                    <div class="service-icon">💡</div>
-                    <h3>Consultoria Tech</h3>
-                    <p>Orientamos sua estratégia tecnológica para maximizar o ROI e acelerar a transformação digital.</p>
+                <div class="capability-item">
+                    <div class="capability-icon">📈</div>
+                    <h3>BI com IA</h3>
+                    <p>Dashboards inteligentes que identificam padrões ocultos, anomalias e oportunidades automaticamente, gerando insights acionáveis.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- About Section -->
-    <section class="section bg-secondary" id="sobre">
+    <!-- About Section - AI Focused -->
+    <section class="section" id="sobre">
         <div class="container">
-            <h2 class="section-title">Sobre a ROI Labs</h2>
+            <h2 class="section-title">Por que Escolher a ROI Labs para IA?</h2>
             
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.4rem; color: #007cba; margin-bottom: 2rem; font-weight: 600;">
-                    Somos uma empresa de tecnologia focada em gerar resultados mensuráveis para nossos clientes através de soluções inovadoras e estratégicas.
+                <p style="font-size: 1.4rem; color: #6366f1; margin-bottom: 3rem; font-weight: 600;">
+                    Somos especialistas em Inteligência Artificial aplicada a negócios. Cada projeto é desenvolvido para gerar ROI mensurável e impacto real nos resultados.
                 </p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                    <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <h3 style="color: #007cba; margin-bottom: 1rem;">🎯 Nossa Missão</h3>
-                        <p style="line-height: 1.7;">Transformar ideias em soluções tecnológicas que impulsionam o crescimento dos negócios.</p>
+                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🚀 ROI Comprovado</h3>
+                        <p style="line-height: 1.7;">Nossos clientes veem ROI médio de 300-500% no primeiro ano com nossas soluções de IA.</p>
                     </div>
                     
-                    <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <h3 style="color: #007cba; margin-bottom: 1rem;">🚀 Nossa Visão</h3>
-                        <p style="line-height: 1.7;">Ser referência em inovação tecnológica que gera ROI real e mensurável para nossos clientes.</p>
+                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🎯 Implementação Rápida</h3>
+                        <p style="line-height: 1.7;">Metodologia ágil que entrega resultados em 30-90 dias, não em anos como consultorias tradicionais.</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🛡️ Suporte Especializado</h3>
+                        <p style="line-height: 1.7;">Equipe dedicada de cientistas de dados e engenheiros de IA para garantir o sucesso contínuo.</p>
                     </div>
                 </div>
             </div>
@@ -563,22 +578,22 @@ if (!defined('ABSPATH')) {
     <!-- Contact Section -->
     <section class="section" id="contato">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
+            <h2 class="section-title">Vamos Implementar IA no Seu Negócio?</h2>
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <h4>📧 Email Comercial</h4>
-                    <p><a href="mailto:contato@roilabs.com.br">contato@roilabs.com.br</a></p>
+                    <h4>💼 Consultoria Estratégica em IA</h4>
+                    <p><a href="mailto:ia@roilabs.com.br">ia@roilabs.com.br</a></p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>🌐 Website & Portfolio</h4>
+                    <h4>📞 Fale com um Especialista</h4>
+                    <p><a href="https://calendly.com/roilabs-ia" target="_blank">Agendar Reunião Gratuita</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>🌐 Portfólio de Projetos IA</h4>
                     <p><a href="https://roilabs.com.br" target="_blank">www.roilabs.com.br</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <h4>💼 Repositório GitHub</h4>
-                    <p><a href="https://github.com/JeanZorzetti/roilabs-website" target="_blank">github.com/JeanZorzetti/roilabs-website</a></p>
                 </div>
             </div>
         </div>
