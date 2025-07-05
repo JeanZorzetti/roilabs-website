@@ -1,6 +1,6 @@
 <?php
 /**
- * ROI Labs Theme - AI-Focused Professional Header
+ * ROI Labs Theme - SDR IA + Secretária IA Focused
  */
 
 if (!defined('ABSPATH')) {
@@ -12,9 +12,9 @@ if (!defined('ABSPATH')) {
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROI Labs - Especialistas em Inteligência Artificial e Automação</title>
-    <meta name="description" content="Transformamos seu negócio com Inteligência Artificial. Chatbots, automação de processos, análise de dados e soluções de IA personalizadas que geram ROI real.">
-    <meta name="keywords" content="inteligência artificial, IA, chatbots, automação, machine learning, AI consulting, análise de dados, ROI">
+    <title>ROI Labs - SDR IA e Secretária IA para Automatizar Vendas</title>
+    <meta name="description" content="SDR IA que qualifica leads 24/7 e Secretária IA que agenda reuniões automaticamente. Aumente suas vendas com automação inteligente que funciona.">
+    <meta name="keywords" content="SDR IA, secretária IA, automação vendas, chatbot vendas, agendamento automático, prospecção IA">
     
     <style>
         /* Reset e Base */
@@ -66,7 +66,7 @@ if (!defined('ABSPATH')) {
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #6366f1;
+            color: #059669;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -74,7 +74,7 @@ if (!defined('ABSPATH')) {
         }
         
         .logo:hover {
-            color: #4f46e5;
+            color: #047857;
             transform: scale(1.05);
             transition: all 0.3s ease;
         }
@@ -97,8 +97,8 @@ if (!defined('ABSPATH')) {
         }
         
         .nav-menu a:hover {
-            color: #6366f1;
-            background: rgba(99, 102, 241, 0.1);
+            color: #059669;
+            background: rgba(5, 150, 105, 0.1);
         }
         
         .nav-menu a::after {
@@ -108,7 +108,7 @@ if (!defined('ABSPATH')) {
             left: 50%;
             width: 0;
             height: 2px;
-            background: #6366f1;
+            background: #059669;
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
@@ -168,9 +168,9 @@ if (!defined('ABSPATH')) {
             top: 0;
         }
         
-        /* Hero Section - AI Focused */
+        /* Hero Section - SDR IA + Secretária IA */
         .hero {
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
             color: white;
             padding: 8rem 0 4rem;
             text-align: center;
@@ -185,7 +185,7 @@ if (!defined('ABSPATH')) {
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3Ccircle cx='53' cy='7' r='7'/%3E%3Ccircle cx='53' cy='53' r='7'/%3E%3Ccircle cx='7' cy='53' r='7'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40v40zm40 0v-40h-40l40 40z'/%3E%3C/g%3E%3C/svg%3E") repeat;
         }
         
         .hero-content {
@@ -227,7 +227,7 @@ if (!defined('ABSPATH')) {
         
         .btn-primary {
             background: white;
-            color: #6366f1;
+            color: #059669;
             box-shadow: 0 4px 15px rgba(255,255,255,0.3);
         }
         
@@ -244,12 +244,12 @@ if (!defined('ABSPATH')) {
         
         .btn-outline:hover {
             background: white;
-            color: #6366f1;
+            color: #059669;
             transform: translateY(-3px);
         }
         
-        /* AI Capabilities Section */
-        .ai-capabilities {
+        /* Products Section - Apenas 2 produtos */
+        .products-section {
             padding: 5rem 0;
             background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
         }
@@ -270,63 +270,100 @@ if (!defined('ABSPATH')) {
             left: 50%;
             width: 60px;
             height: 4px;
-            background: #6366f1;
+            background: #059669;
             transform: translateX(-50%);
             border-radius: 2px;
         }
         
-        .capabilities-grid {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 3rem;
             margin: 3rem 0;
         }
         
-        .capability-item {
-            text-align: center;
-            padding: 3rem 2rem;
+        .product-item {
+            padding: 3.5rem 3rem;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
-            border: 1px solid rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(5, 150, 105, 0.1);
             position: relative;
             overflow: hidden;
         }
         
-        .capability-item::before {
+        .product-item::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            height: 5px;
+            background: linear-gradient(90deg, #059669, #10b981);
         }
         
-        .capability-item:hover {
+        .product-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
-            border-color: #6366f1;
+            box-shadow: 0 25px 50px rgba(5, 150, 105, 0.2);
+            border-color: #059669;
         }
         
-        .capability-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+        .product-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
         }
         
-        .capability-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+        .product-item h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
             color: #1e293b;
-            font-weight: 600;
+            font-weight: 700;
         }
         
-        .capability-item p {
+        .product-item p {
             color: #64748b;
-            line-height: 1.7;
-            font-size: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .product-features li {
+            color: #374151;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .product-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #059669;
+            font-weight: bold;
+        }
+        
+        .product-cta {
+            background: #059669;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .product-cta:hover {
+            background: #047857;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
         }
         
         /* Contact */
@@ -358,14 +395,14 @@ if (!defined('ABSPATH')) {
         }
         
         .contact-item a {
-            color: #6366f1;
+            color: #059669;
             text-decoration: none;
             font-weight: 500;
             font-size: 1.1rem;
         }
         
         .contact-item a:hover {
-            color: #4f46e5;
+            color: #047857;
             text-decoration: underline;
         }
         
@@ -429,7 +466,7 @@ if (!defined('ABSPATH')) {
                 font-size: 1.2rem;
             }
             
-            .ai-capabilities {
+            .products-section {
                 padding: 3rem 0;
             }
             
@@ -437,12 +474,12 @@ if (!defined('ABSPATH')) {
                 font-size: 2.2rem;
             }
             
-            .capabilities-grid {
+            .products-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             
-            .capability-item {
+            .product-item {
                 padding: 2rem 1.5rem;
             }
             
@@ -466,14 +503,13 @@ if (!defined('ABSPATH')) {
         <nav class="main-navigation">
             <div class="site-branding">
                 <a href="#hero" class="logo">
-                    🤖 ROI Labs
+                    🚀 ROI Labs
                 </a>
             </div>
             
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#hero">Início</a></li>
-                <li><a href="#ia-solutions">Soluções IA</a></li>
-                <li><a href="#casos-uso">Casos de Uso</a></li>
+                <li><a href="#produtos">Nossos Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
             
@@ -486,91 +522,61 @@ if (!defined('ABSPATH')) {
 
 <div id="page" class="site">
     
-    <!-- Hero Section - AI Focused -->
+    <!-- Hero Section - SDR IA + Secretária IA -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Inteligência Artificial que Transforma Negócios</h1>
-                <p>Especializamos em implementar soluções de IA que automatizam processos, analisam dados inteligentemente e geram ROI mensurável. Do chatbot ao machine learning avançado.</p>
+                <h1>SDR IA + Secretária IA que Vendem Enquanto Você Dorme</h1>
+                <p>Nossa SDR IA qualifica leads 24/7 e nossa Secretária IA agenda reuniões automaticamente. Aumente suas vendas em 300% com automação que realmente funciona.</p>
                 <div class="hero-actions">
-                    <a href="#ia-solutions" class="btn btn-primary">Soluções de IA</a>
-                    <a href="#contato" class="btn btn-outline">Fale com Especialista</a>
+                    <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+                    <a href="#contato" class="btn btn-outline">Falar com Especialista</a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- AI Capabilities Section -->
-    <section class="ai-capabilities" id="ia-solutions">
+    <!-- Products Section - Apenas SDR IA + Secretária IA -->
+    <section class="products-section" id="produtos">
         <div class="container">
-            <h2 class="section-title">Nossas Especialidades em IA</h2>
+            <h2 class="section-title">Nossos 2 Produtos de Automação</h2>
             
-            <div class="capabilities-grid">
-                <div class="capability-item">
-                    <div class="capability-icon">💬</div>
-                    <h3>Chatbots Inteligentes</h3>
-                    <p>Assistentes virtuais com processamento de linguagem natural que atendem 24/7, qualificam leads e reduzem custos operacionais em até 70%.</p>
-                </div>
+            <div class="products-grid">
                 
-                <div class="capability-item">
-                    <div class="capability-icon">⚙️</div>
-                    <h3>Automação de Processos</h3>
-                    <p>RPA (Robotic Process Automation) e workflows inteligentes que eliminam tarefas repetitivas e aumentam produtividade em 300%.</p>
-                </div>
-                
-                <div class="capability-item">
-                    <div class="capability-icon">📊</div>
-                    <h3>Análise Preditiva</h3>
-                    <p>Machine Learning para prever tendências, comportamentos e demandas, permitindo tomada de decisões estratégicas baseadas em dados.</p>
-                </div>
-                
-                <div class="capability-item">
-                    <div class="capability-icon">🎯</div>
-                    <h3>Personalização IA</h3>
-                    <p>Sistemas de recomendação e personalização que aumentam conversão, engagement e lifetime value dos clientes.</p>
-                </div>
-                
-                <div class="capability-item">
-                    <div class="capability-icon">🔍</div>
-                    <h3>Computer Vision</h3>
-                    <p>Reconhecimento de imagens, OCR avançado e análise visual automatizada para controle de qualidade e otimização de processos.</p>
-                </div>
-                
-                <div class="capability-item">
-                    <div class="capability-icon">📈</div>
-                    <h3>BI com IA</h3>
-                    <p>Dashboards inteligentes que identificam padrões ocultos, anomalias e oportunidades automaticamente, gerando insights acionáveis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About Section - AI Focused -->
-    <section class="section" id="sobre">
-        <div class="container">
-            <h2 class="section-title">Por que Escolher a ROI Labs para IA?</h2>
-            
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.4rem; color: #6366f1; margin-bottom: 3rem; font-weight: 600;">
-                    Somos especialistas em Inteligência Artificial aplicada a negócios. Cada projeto é desenvolvido para gerar ROI mensurável e impacto real nos resultados.
-                </p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🚀 ROI Comprovado</h3>
-                        <p style="line-height: 1.7;">Nossos clientes veem ROI médio de 300-500% no primeiro ano com nossas soluções de IA.</p>
-                    </div>
+                <!-- SDR IA -->
+                <div class="product-item">
+                    <div class="product-icon">🎯</div>
+                    <h3>SDR IA</h3>
+                    <p>Assistente de vendas com Inteligência Artificial que conversa com seus leads, qualifica oportunidades e passa apenas prospects qualificados para sua equipe.</p>
                     
-                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🎯 Implementação Rápida</h3>
-                        <p style="line-height: 1.7;">Metodologia ágil que entrega resultados em 30-90 dias, não em anos como consultorias tradicionais.</p>
-                    </div>
+                    <ul class="product-features">
+                        <li>Qualifica leads 24 horas por dia, 7 dias por semana</li>
+                        <li>Conversa natural via WhatsApp, site ou email</li>
+                        <li>Identifica orçamento, necessidade e timing</li>
+                        <li>Integra com seu CRM automaticamente</li>
+                        <li>Relatórios detalhados de performance</li>
+                    </ul>
                     
-                    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                        <h3 style="color: #6366f1; margin-bottom: 1rem;">🛡️ Suporte Especializado</h3>
-                        <p style="line-height: 1.7;">Equipe dedicada de cientistas de dados e engenheiros de IA para garantir o sucesso contínuo.</p>
-                    </div>
+                    <a href="#contato" class="product-cta">Quero a SDR IA</a>
                 </div>
+                
+                <!-- Secretária IA -->
+                <div class="product-item">
+                    <div class="product-icon">📅</div>
+                    <h3>Secretária IA</h3>
+                    <p>Assistente virtual que agenda reuniões, confirma presença, reagenda quando necessário e mantém sua agenda sempre organizada e otimizada.</p>
+                    
+                    <ul class="product-features">
+                        <li>Agenda reuniões via WhatsApp ou email</li>
+                        <li>Confirma presença automaticamente</li>
+                        <li>Reagenda conflitos e cancelamentos</li>
+                        <li>Integra com Google Calendar/Outlook</li>
+                        <li>Envia lembretes automáticos</li>
+                    </ul>
+                    
+                    <a href="#contato" class="product-cta">Quero a Secretária IA</a>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -578,22 +584,22 @@ if (!defined('ABSPATH')) {
     <!-- Contact Section -->
     <section class="section" id="contato">
         <div class="container">
-            <h2 class="section-title">Vamos Implementar IA no Seu Negócio?</h2>
+            <h2 class="section-title">Vamos Automatizar Suas Vendas?</h2>
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <h4>💼 Consultoria Estratégica em IA</h4>
-                    <p><a href="mailto:ia@roilabs.com.br">ia@roilabs.com.br</a></p>
+                    <h4>💬 WhatsApp Comercial</h4>
+                    <p><a href="https://wa.me/5511999999999" target="_blank">+55 11 99999-9999</a></p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>📞 Fale com um Especialista</h4>
-                    <p><a href="https://calendly.com/roilabs-ia" target="_blank">Agendar Reunião Gratuita</a></p>
+                    <h4>📧 Email Direto</h4>
+                    <p><a href="mailto:vendas@roilabs.com.br">vendas@roilabs.com.br</a></p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>🌐 Portfólio de Projetos IA</h4>
-                    <p><a href="https://roilabs.com.br" target="_blank">www.roilabs.com.br</a></p>
+                    <h4>📞 Agendar Demonstração</h4>
+                    <p><a href="https://calendly.com/roilabs-demo" target="_blank">Ver SDR IA e Secretária IA Funcionando</a></p>
                 </div>
             </div>
         </div>
